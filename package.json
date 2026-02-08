@@ -1,0 +1,48 @@
+{
+  "name": "@diffdelta/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for DiffDelta — lets AI agents discover and consume intelligence feeds natively",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "diffdelta-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "diffdelta",
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "security",
+    "intelligence",
+    "changefeed"
+  ],
+  "author": "DiffDelta <human@diffdelta.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diffdelta/diffdelta-mcp.git"
+  },
+  "homepage": "https://diffdelta.io",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.3.0"
+  }
+}
