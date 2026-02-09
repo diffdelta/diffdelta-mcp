@@ -1,6 +1,6 @@
 {
   "name": "@diffdelta/mcp-server",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "MCP server for DiffDelta — lets AI agents discover and consume intelligence feeds natively",
   "type": "module",
   "main": "dist/index.js",
